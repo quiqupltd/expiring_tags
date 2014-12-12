@@ -16,8 +16,6 @@ class TagTables < ActiveRecord::Migration
       t.integer :expires_in
       t.timestamps
     end
-
-    add_index :tags, :name, unique: true
   end
 
   def down
