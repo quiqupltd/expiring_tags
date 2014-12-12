@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 1) do
   add_index "taggings", ["taggable_type", "taggable_id"], name: "index_taggings_on_taggable_type_and_taggable_id"
 
   create_table "tags", force: true do |t|
-    t.string   "name",       null: false
+    t.string   "tag",       null: false
     t.integer  "expires_in"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -37,6 +37,6 @@ ActiveRecord::Schema.define(version: 1) do
     t.timestamps
   end
 
-  add_index "tags", ["name"], name: "index_tags_on_name"
+  add_index "tags", ["tag"], name: "index_tags_on_tag"
 
 end

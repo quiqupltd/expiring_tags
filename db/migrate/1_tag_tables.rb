@@ -12,7 +12,7 @@ class TagTables < ActiveRecord::Migration
     add_index :taggings, [:taggable_type, :taggable_id, :tag_id], unique: true, name: 'unique_taggings'
 
     create_table :tags do |t|
-      t.string :name, null: false
+      t.string :tag, null: false
       t.integer :expires_in
       t.timestamps
     end

@@ -7,11 +7,11 @@ class ExpiringTags::TagNames
   end
 
   def to_a
-    taggable.tags.map(&:name)
+    taggable.tags.map(&:tag)
   end
 
-  def <<(name)
-    taggable.tags << ExpiringTags::Tag.find_or_create_by(name: name)
+  def <<(tag)
+    taggable.tags << ExpiringTags::Tag.find_or_create_by(tag: tag)
   end
 
   def self.new_with_names(taggable, names)
@@ -29,8 +29,8 @@ class ExpiringTags::TagNames
     to_a.each &block
   end
 
-  def delete(name)
-    taggable.tags.delete ExpiringTags::Tag.find_by_name(name)
+  def delete(tag)
+    taggable.tags.delete ExpiringTags::Tag.find_by_tag(tag)
   end
 
   def +(array)
