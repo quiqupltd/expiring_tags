@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'combustion',   '~> 0.5.2'
   spec.add_development_dependency 'rspec-rails',  '~> 3.1.0'
   spec.add_development_dependency 'factory_girl_rails', '~> 4.5'
-  spec.add_development_dependency 'sqlite3',      '~> 1.3.10'
+  spec.add_development_dependency 'pg',      '~> 0.17'
 end

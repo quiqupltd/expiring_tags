@@ -7,7 +7,7 @@ class ExpiringTags::TagNames
   end
 
   def to_a
-    taggable.tags.map(&:tag)
+    taggable.tags.active.map(&:tag)
   end
 
   def <<(tag)
