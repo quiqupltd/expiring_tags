@@ -25,6 +25,8 @@ describe 'Adding and removing tags' do
 
     expect(venue.tags).to include(no_takeaway)
     expect(venue.tags.size).to eq(1)
+
+    expect(venue.tag_names).to include('no_takeaway')
     expect(venue.tag_names.count).to eq(1)
   end
 end
