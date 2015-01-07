@@ -4,5 +4,5 @@ class ExpiringTags::Tag < ActiveRecord::Base
   validates :tag, presence: true
 
   # Equivalent to created_at + expires_in.minutes > Time.now
-  scope :active, -> { where("(tags.created_at + (tags.expires_in || 'minutes')::interval) > clock_timestamp()") }
+  scope :active, -> { where("(tags.created_at + (expires_in || 'minutes')::interval) >= clock_timestamp() OR expires_in IS NULL") }
 end
