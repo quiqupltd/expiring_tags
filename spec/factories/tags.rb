@@ -16,8 +16,8 @@ FactoryGirl.define do
 
     trait :expired do
       tag 'not_serving'
-      expires_in 30
-      created_at 35.minutes.ago
+      expires_in 1
+      created_at 61.minutes.ago
     end
 
   end
