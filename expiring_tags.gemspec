@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ExpiringTags::VERSION
   spec.authors       = ['Wilson Silva']
   spec.email         = ['me@wilsonsilva.net']
-  spec.summary       = 'Good Tags'
-  spec.description   = 'A good, simple, solid tagging extension for ActiveRecord'
+  spec.summary       = 'A simple tagging extension for ActiveRecord that allows tags to expire.'
+  spec.description   = 'A simple tagging extension for ActiveRecord that allows tags to expire.'
   spec.homepage      = 'https://github.com/QuiqUpLTD/expiring_tags'
   spec.license       = 'MIT'
 
