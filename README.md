@@ -66,7 +66,7 @@ infected_with_ebola = ExpiringTags::Tag.new(tag: 'infected_with_ebola')
 Managing expired tags
 
 ```ruby
-not_serving = ExpiringTags::Tag.new(tag: 'not_serving', expires_in: 1) # Expires in 1 hour
+not_serving = ExpiringTags::Tag.new(tag: 'not_serving', expires_in: 1) # 1 hour
 
 @venue.tags << not_serving
 @venue.tags.count # 1
