@@ -4,3 +4,6 @@
 0.6.0
 - Add a scope to filter out expired tags
 - Hide expired tags by default
+
+0.6.1
+- Change the expiration's unit from minutes to hours
