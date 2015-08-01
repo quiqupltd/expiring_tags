@@ -21,9 +21,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake', '~> 10.0'
 
-  spec.add_runtime_dependency     'activerecord'
+  spec.add_runtime_dependency     'activerecord', '~> 4.2.0', '>= 4.2.0'
   spec.add_development_dependency 'combustion',   '~> 0.5.2'
-  spec.add_development_dependency 'rspec-rails',  '~> 3.1.0'
+  spec.add_development_dependency 'rspec-rails',  '~> 3.1.0', '>= 3.1.0'
   spec.add_development_dependency 'factory_girl_rails', '~> 4.5'
-  spec.add_development_dependency 'pg',      '> 0.17'
+  spec.add_development_dependency 'pg',      '~> 0.17'
 end
