@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/QuiqUpLTD/expiring_tags.svg?style=svg&circle-token=e105a5ec377803eaa6e7f51f24833f42be3329a8)](https://circleci.com/gh/QuiqUpLTD/expiring_tags)
+
 # ExpiringTags
 
 A simple tagging extension for ActiveRecord that allows tags to expire.
