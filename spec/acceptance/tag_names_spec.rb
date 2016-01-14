@@ -29,7 +29,7 @@ describe 'Managing tags via names' do
       names << name
     end
 
-    expect(names).to eq ['not_serving', 'no_takeaway']
+    expect(names).to include('no_takeaway', 'not_serving')
   end
 
   xit 'does not allow duplication of tags' do
