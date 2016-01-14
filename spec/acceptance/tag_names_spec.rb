@@ -38,7 +38,7 @@ describe 'Managing tags via names' do
 
     venue.tag_names = ['no_takeaway']
 
-    expect(existing.tag_ids).to eq venue.tag_ids
+    expect(existing.tag_ids.size).to eq 1
   end
 
   it 'appends tag names' do
