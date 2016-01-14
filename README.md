@@ -76,6 +76,16 @@ not_serving = ExpiringTags::Tag.new(tag: 'not_serving', expires_in: 1) # 1 hour
 @venue.tags.count # 0
 ```
 
+## Testing
+
+Setup the database using:
+
+    $ bundle rake db:setup
+
+And then run RSpec:
+
+    $ bundle exec rspec
+
 
 ## Contributing
 
