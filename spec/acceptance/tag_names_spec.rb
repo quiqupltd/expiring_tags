@@ -32,7 +32,7 @@ describe 'Managing tags via names' do
     expect(names).to include('no_takeaway', 'not_serving')
   end
 
-  xit 'does not allow duplication of tags' do
+  it 'does not allow duplication of tags' do
     existing = Venue.create
     existing.tags << create(:tag, :no_takeaway)
 
